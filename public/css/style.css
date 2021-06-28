@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url('/images/bg-body.png');
+    padding: 15px 10px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* HEADER */
+.main-header{
+    text-align: center;
+}
+.main-header .logo{
+    border-radius: 50%;
+    width: 180px;
+}
+.main-header .toggle-nav{
+    display: block;
+    margin: 20px auto 15px auto;
+    padding: 5px;
+    background-color: #444;
+    width: fit-content;
+    color: white;
+    border-radius: 2px;
+}
+.main-header .main-nav ul li{
+    background-color: #444;
+    /* height: 20px; */
+    margin-bottom: 1px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+/* BANNER */
+.banner{
+    display: none;
+}
+
+/* PRODUCTS */
+.vip-products .product{
+    max-width: 380px;
+    padding-bottom: 10px;
+}
+.vip-products .product h2{
+    margin: 15px 0;
+}
+.vip-products .product p{
+    color: #444;
+}
+.vip-products .product a.more{
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    margin: 13px 0 0 0;
+    width: 95px;
+    display: block;
+}
+
+.vip-products .product .photo-container{
+    position: relative;
+
+}
+.vip-products .product .photo-container img.photo{
+    width: 100%;
+}
+.vip-products .product .photo-container .special{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+} 
+.vip-products .product .photo-container .zoom{
+    position: absolute;
+    padding: 5px;
+    top: 48%;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+/* FOOTER */
+.main-footer{
+    text-align: center;
+}
+.main-footer ul li{
+    background-color: red;
+    /* height: 20px; */
+    margin-bottom: 1px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+/* Media */
+/* Tablet */
+@media (min-width: 768px) {
+
+    /*Header*/
+
+    .main-header .toggle-nav {
+        display: none;
+    }
+
+    .main-header{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main-header .main-nav {
+        margin: 20px 0;
+    }
+    
+    .main-header .main-nav ul li {
+        display: inline-block;
+        margin-bottom:0px;
+        margin-right: 9.5px;
+        padding: 7px 7px;
+        width: 113px;
+        font-size: 12px;
+    }
+
+    .main-header .main-nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .banner {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+
+    .vip-products .product {
+        display: inline-block;
+        max-width: 371px;
+    }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1180px) {
+    .container{
+        max-width: 1180px;
+    }
+    .main-header .logo{
+        border-radius: 50%;
+        width: 180px;
+    }
+    .main-header {
+        max-width: 100%;
+        text-align: center;
+    }
+    .main-header .main-nav {
+        margin: 30px 0 20px 0;
+
+    }
+    .main-header .main-nav ul li {
+        
+        margin-right: 11px;
+        padding: 7px 15px;
+        width: 180px;
+        font-size: 16px;
+    }
+    .vip-products .product {
+        max-width: 380px;
+        margin-right: 5px;
+    }
+    .vip-products .product:nth-child(3n){
+        margin-right: 0;
+    }
+
+    /* footer */
+    .main-footer{
+        height: 10em;
+        border-radius: 20px 20px 0 0;
+        background-color: red;
+    }
+    .main-footer ul li{
+        border-right: 1px solid white;
+        text-align: center;
+        margin-top: 68px;
+        margin-bottom: 1px;
+        text-transform: capitalize;
+        padding: 0 10px;
+        display: inline-block;
+    }
+    .main-footer ul li:last-child{
+        border: none;
+    }
+}
